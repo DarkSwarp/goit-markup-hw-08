@@ -1,0 +1,26 @@
+.contact__list {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+}
+.contact__link {
+    @extend %link;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contact__email {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+.contact__phone {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}

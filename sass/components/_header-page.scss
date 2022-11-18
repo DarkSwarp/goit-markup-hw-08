@@ -1,0 +1,10 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: #ececec solid 1px;
+}
+.conteiner-header {
+    display: flex;
+    align-items: center;
+    @extend .conteiner;
+}

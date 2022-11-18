@@ -1,0 +1,30 @@
+%list {
+    list-style-type: none;
+}
+%link {
+    text-decoration: none;
+    transition: color $transition, background-color $transition, border $transition;
+}
+%link:hover,
+%link:focus {
+    color: $accent-color;
+}
+.conteiner {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+%title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primari-text-color;
+    margin-bottom: 50px;
+}

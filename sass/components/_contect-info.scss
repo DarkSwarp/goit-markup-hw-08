@@ -1,0 +1,39 @@
+.contact-info {
+    margin-right: 94px;
+}
+
+.logo {
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+
+    &--blue {
+        color: $accent-color;
+    }
+}
+.contact-info__list {
+    @extend %list;
+}
+.contact-info__item:not(:first-child) {
+    margin-top: 9px;
+}
+.contact-info__link {
+    @extend %link;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: block;
+
+    &--white {
+        color: #ffffff;
+    }
+    &--grey {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

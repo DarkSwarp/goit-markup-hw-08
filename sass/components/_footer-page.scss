@@ -1,0 +1,10 @@
+.footer {
+    margin: 0px auto;
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.conteiner-footer {
+    display: flex;
+    @extend .conteiner;
+}
