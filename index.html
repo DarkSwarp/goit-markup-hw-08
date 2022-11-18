@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
-        <header class="header">
+        <!-- <header class="header">
             <div class="conteiner-header">
                 <nav class="nav">
                     <a class="nav__logo" href="./index.html"><span class="nav__logo--blue">Web</span>Studio</a>
@@ -41,9 +41,9 @@
                     </ul>
                 </div>
             </div>
-        </header>
+        </header> -->
         <main>
-            <section class="hero">
+            <!-- <section class="hero">
                 <div class="conteiner">
                     <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                     <button class="hero__btn" data-modal-open type="button">Замовити послугу</button>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="benefits">
                 <div class="conteiner">
                     <h2 class="benefits__title visually-hidden">Наші переваги</h2>
@@ -108,7 +108,7 @@
                             <h3 class="benefits__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
                             <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                         </li>
-                        <li class="benefits-item">
+                        <li class="benefits__item">
                             <div class="benefits__icon-bg">
                                 <svg class="benefits__icon">
                                     <use href="./image/icons.svg#icon-clock"></use>
@@ -117,7 +117,7 @@
                             <h3 class="benefits__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
                             <p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                         </li>
-                        <li class="benefits-item">
+                        <li class="benefits__item">
                             <div class="benefits__icon-bg">
                                 <svg class="benefits__icon">
                                     <use href="./image/icons.svg#icon-diagram"></use>
@@ -126,7 +126,7 @@
                             <h3 class="benefits__subtitle">ПЛАНУВАННЯ</h3>
                             <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </li>
-                        <li class="benefits-item">
+                        <li class="benefits__item">
                             <div class="benefits__icon-bg">
                                 <svg class="benefits__icon">
                                     <use href="./image/icons.svg#icon-astronaut"></use>
@@ -143,15 +143,15 @@
                     <h2 class="about__title">Чим ми займаємося</h2>
                     <ul class="about__list">
                         <li class="about__item">
-                            <img src="./image/box1.jpg" alt="Програмування" width="370" />
+                            <img srcset="./image/box1.jpg 1x, ./image/box1@2x.jpg 2x" src="./image/box1.jpg" alt="Програмування" width="370" />
                             <p class="about__text">Десктопні додатки</p>
                         </li>
                         <li class="about__item">
-                            <img src="./image/box2.jpg" alt="Дизайн" width="370" />
+                            <img srcset="./image/box2.jpg 1x, ./image/box2@2x.jpg 2x" src="./image/box2.jpg" alt="Дизайн" width="370" />
                             <p class="about__text">Мобільні додатки</p>
                         </li>
                         <li class="about__item">
-                            <img src="./image/box3.jpg" alt="Кольорове оформлення" width="370" />
+                            <img srcset="./image/box3.jpg 1x, ./image/box3@2x.jpg 2x" src="./image/box3.jpg" alt="Кольорове оформлення" width="370" />
                             <p class="about__text">Дизайнерські рішення</p>
                         </li>
                     </ul>
@@ -162,7 +162,12 @@
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img src="./image/teamcard1.jpg" alt="Ігор Дем'яненко Product Designer" width="270" />
+                            <picture>
+                                <source srcset="./image/teamcard1.jpg 1x, ./image/teamcard1@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./image/teamcard1tab.jpg 1x, ./image/teamcard1tab@2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./image/teamcard1mob.jpg 1x, ./image/teamcard1mob@2x.jpg 2x" media="(max-width: 767px)" />
+                                <img src="./image/teamcard1.jpg" alt="Ігор Дем'яненко Product Designer" width="450" />
+                            </picture>
                             <div class="personal-card">
                                 <h3 class="personal-card__name">Ігор Дем'яненко</h3>
                                 <p class="personal-card__profession" lang="en">Product Designer</p>
@@ -199,7 +204,12 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./image/teamcard2.jpg" alt="Ольга Рєпіна Frontend Developer" width="270" />
+                            <picture>
+                                <source srcset="./image/teamcard2.jpg 1x, ./image/teamcard2@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./image/teamcard2tab.jpg 1x, ./image/teamcard2tab@2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./image/teamcard2mob.jpg 1x, ./image/teamcard2mob@2x.jpg 2x" media="(max-width: 767px)" />
+                                <img src="./image/teamcard2.jpg" alt="Ольга Рєпіна Frontend Developer" width="450" />
+                            </picture>
                             <div class="personal-card">
                                 <h3 class="personal-card__name">Ольга Рєпіна</h3>
                                 <p class="personal-card__profession" lang="en">Frontend Developer</p>
@@ -236,7 +246,12 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./image/teamcard3.jpg" alt="Микола Тарасов Marketing" width="270" />
+                            <picture>
+                                <source srcset="./image/teamcard3.jpg 1x, ./image/teamcard3@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./image/teamcard3tab.jpg 1x, ./image/teamcard3tab@2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./image/teamcard3mob.jpg 1x, ./image/teamcard3mob@2x.jpg 2x" media="(max-width: 767px)" />
+                                <img src="./image/teamcard3.jpg" alt="Микола Тарасов Marketing" width="450" />
+                            </picture>
                             <div class="personal-card">
                                 <h3 class="personal-card__name">Микола Тарасов</h3>
                                 <p class="personal-card__profession" lang="en">Marketing</p>
@@ -273,7 +288,12 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./image/teamcard4.jpg" alt="Михайло Єрмаков UI Designer" width="270" />
+                            <picture>
+                                <source srcset="./image/teamcard4.jpg 1x, ./image/teamcard4@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./image/teamcard4tab.jpg 1x, ./image/teamcard4tab@2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./image/teamcard4mob.jpg 1x, ./image/teamcard4mob@2x.jpg 2x" media="(max-width: 767px)" />
+                                <img src="./image/teamcard4.jpg" alt="Михайло Єрмаков UI Designer" width="450" />
+                            </picture>
                             <div class="personal-card">
                                 <h3 class="personal-card__name">Михайло Єрмаков</h3>
                                 <p class="personal-card__profession" lang="en">UI Designer</p>
@@ -362,7 +382,7 @@
                 </div>
             </section>
         </main>
-        <footer id="contact" class="footer">
+        <!-- <footer id="contact" class="footer">
             <div class="conteiner-footer">
                 <div class="contact-info">
                     <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
@@ -420,7 +440,7 @@
                     </div>
                 </form>
             </div>
-        </footer>
+        </footer> -->
         <script src="./js/modal.js"></script>
     </body>
 </html>
