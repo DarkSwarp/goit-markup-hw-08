@@ -84,7 +84,7 @@ img {
 @media screen and (max-width: 1199px) {
   .client__title, .team__title, .about__title, .benefits__title {
     font-size: 28px;
-    line-height: 0.9166666667;
+    line-height: 1.1785714286;
     margin-bottom: 30px;
   }
 }
@@ -710,30 +710,65 @@ body {
   padding-bottom: 60px;
 }
 
-.conteiner-footer {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .conteiner-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.contact-info {
-  margin-right: 94px;
+@media screen and (min-width: 768px) {
+  .contact-info {
+    margin-right: 177px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-info {
+    margin-right: 94px;
+  }
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.1923076923;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 20px;
   display: block;
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
 .logo--blue {
   color: #2196f3;
 }
 
-.contact-info__item:not(:first-child) {
-  margin-top: 9px;
+@media screen and (max-width: 1199px) {
+  .contact-info__list {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-info__item:not(:first-child) {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-info__item:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 
 .contact-info__link {
@@ -750,13 +785,26 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social-media {
-  margin-right: 93px;
+@media screen and (max-width: 767px) {
+  .social-media {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-media {
+    margin-right: 93px;
+  }
 }
 
 .social-media__list {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .social-media__list {
+    justify-content: center;
+    justify-items: center;
+  }
 }
 
 .social-media__title {
@@ -766,6 +814,11 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .social-media__title {
+    text-align: center;
+  }
 }
 
 .social-media__link {
@@ -789,6 +842,12 @@ body {
   fill: currentColor;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
+
 .subscription__text {
   font-weight: 700;
   font-size: 14px;
@@ -799,16 +858,22 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .subscription__text {
+    text-align: center;
+  }
+}
 
-.subscription__wrap {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .subscription__wrap {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .subscription__input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -821,6 +886,24 @@ body {
   padding-left: 16px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .subscription__input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+  }
 }
 .subscription__input::-moz-placeholder {
   font-size: 16px;
@@ -861,6 +944,12 @@ body {
   border-radius: 4px;
   border: 0px;
   cursor: pointer;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .subscription__btn {
+    margin-top: 20px;
+  }
 }
 
 .subscription__icon {

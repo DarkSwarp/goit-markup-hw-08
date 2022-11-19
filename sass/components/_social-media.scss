@@ -1,11 +1,20 @@
 .social-media {
-    margin-right: 93px;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @include desctop() {
+        margin-right: 93px;
+    }
 }
 
 .social-media__list {
     @extend %list;
     display: flex;
     gap: 10px;
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 .social-media__title {
@@ -15,6 +24,9 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .social-media__link {

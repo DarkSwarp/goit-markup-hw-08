@@ -1,16 +1,28 @@
 .contact-info {
-    margin-right: 94px;
+    @include tablet() {
+        margin-right: 177px;
+    }
+    @include desctop() {
+        margin-right: 94px;
+    }
 }
 
 .logo {
     font-family: $secondary-font-family;
-    font-size: 26px;
-    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 20px;
     display: block;
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        text-align: center;
+    }
+    @include desctop() {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
 
     &--blue {
         color: $accent-color;
@@ -18,9 +30,17 @@
 }
 .contact-info__list {
     @extend %list;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 .contact-info__item:not(:first-child) {
-    margin-top: 9px;
+    @media screen and (max-width: 1199px) {
+        margin-top: 8px;
+    }
+    @include desctop() {
+        margin-top: 9px;
+    }
 }
 .contact-info__link {
     @extend %link;
