@@ -22,24 +22,46 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
     padding: 40px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform $transition;
     z-index: 2;
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+        height: 609px;
+    }
+    @media screen and (max-width: 479px) {
+        width: calc(100% - 30px);
+        height: 609px;
+    }
+    @include desctop() {
+        width: 528px;
+        height: 581px;
+    }
 }
 .modal__title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23 / 20);
+
     text-align: center;
     letter-spacing: 0.03em;
     color: $primari-text-color;
     margin-bottom: 12px;
+    @media screen and (max-width: 1199px) {
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    @include desctop() {
+        line-height: calc(23 / 20);
+        font-size: 20px;
+    }
+    @media screen and (max-width: 330px) {
+        line-height: 1.5;
+        font-size: 19px;
+    }
 }
+
 .modal__label {
     display: block;
     font-size: 12px;
@@ -106,16 +128,28 @@
 }
 .modal__policy {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
 .modal__text {
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
-    margin-right: 5px;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        margin-right: 3px;
+    }
+    @include desctop() {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-right: 5px;
+    }
+    @media screen and (max-width: 366px) {
+        font-size: 9.5px;
+        line-height: calc(14 / 12);
+    }
 }
 .icon-box {
     display: flex;
@@ -127,8 +161,16 @@
     border: 2px solid #000000;
     border-radius: 3px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 8px;
     fill: transparent;
+    @media screen and (max-width: 1199px) {
+        margin-right: 8px;
+    }
+    @include desctop() {
+        margin-right: 8px;
+    }
+    @media screen and (max-width: 366px) {
+        margin-right: 5px;
+    }
 }
 .modal__check:checked + .modal__policy .icon-box {
     background-color: $accent-color;
@@ -137,11 +179,22 @@
 }
 .modal__link {
     @extend %link;
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $accent-color;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+    @include desctop() {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-right: 5px;
+    }
+    @media screen and (max-width: 366px) {
+        font-size: 9.5px;
+        line-height: calc(14 / 12);
+    }
 }
 .modal__btn {
     font-family: inherit;
@@ -156,7 +209,7 @@
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border:0;
+    border: 0;
     margin: 0px auto;
     display: block;
 }
