@@ -49,42 +49,47 @@
                     <button class="hero__btn" data-modal-open type="button">Замовити послугу</button>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
                             <form class="modal__data">
-                                <label for="name" class="modal__label">Ім'я</label>
-                                <div class="input-wrap">
-                                    <input class="modal__input" type="text" name="name" id="name" />
-                                    <svg class="modal__icon">
-                                        <use href="./image/icons.svg#icon-person"></use>
-                                    </svg>
-                                </div>
-                                <label for="telephone" class="modal__label">Телефон</label>
-                                <div class="input-wrap">
-                                    <input class="modal__input" type="tel" name="telephone" id="telephone" />
-                                    <svg class="modal__icon">
-                                        <use href="./image/icons.svg#icon-phone"></use>
-                                    </svg>
-                                </div>
-                                <label for="email" class="modal__label">Пошта</label>
-                                <div class="input-wrap">
-                                    <input class="modal__input" type="email" name="email" id="email" />
-                                    <svg class="modal__icon">
-                                        <use href="./image/icons.svg#icon-email"></use>
-                                    </svg>
-                                </div>
-                                <label for="textarea" class="modal__label">Коментар</label>
-                                <textarea name="comment" id="textarea" class="modal__textarea" placeholder="Введіть текст"></textarea>
-                                <input class="visually-hidden modal__check" type="checkbox" name="policy" id="policy" />
-                                <label for="policy" class="modal__policy">
-                                    <span class="icon-box">
-                                        <svg class="modal__icon-check" width="16" height="15">
-                                            <use href="./image/icons.svg#icon-vector"></use>
+                                <div class="modal__conteiner-form">
+                                    <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+                                    <label for="name" class="modal__label">Ім'я</label>
+                                    <div class="input-wrap">
+                                        <input class="modal__input" type="text" name="name" id="name" />
+                                        <svg class="modal__icon">
+                                            <use href="./image/icons.svg#icon-person"></use>
                                         </svg>
-                                    </span>
-                                    <span class="modal__text">Погоджуюся з розсилкою та приймаю</span>
-                                    <a class="modal__link" href="">Умови договору</a>
-                                </label>
-                                <button class="modal__btn" type="submit">Відправити</button>
+                                    </div>
+                                    <label for="telephone" class="modal__label">Телефон</label>
+                                    <div class="input-wrap">
+                                        <input class="modal__input" type="tel" name="telephone" id="telephone" />
+                                        <svg class="modal__icon">
+                                            <use href="./image/icons.svg#icon-phone"></use>
+                                        </svg>
+                                    </div>
+                                    <label for="email" class="modal__label">Пошта</label>
+                                    <div class="input-wrap">
+                                        <input class="modal__input" type="email" name="email" id="email" />
+                                        <svg class="modal__icon">
+                                            <use href="./image/icons.svg#icon-email"></use>
+                                        </svg>
+                                    </div>
+                                    <label for="textarea" class="modal__label">Коментар</label>
+                                    <textarea name="comment" id="textarea" class="modal__textarea" placeholder="Введіть текст"></textarea>
+                                    <input class="visually-hidden modal__check" type="checkbox" name="policy" id="policy" />
+
+                                    <label for="policy" class="modal__policy">
+                                        <span class="icon-box">
+                                            <svg class="modal__icon-check" width="16" height="15">
+                                                <use href="./image/icons.svg#icon-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="modal__text">Погоджуюся з розсилкою та приймаю</span>
+                                        <a class="modal__link" href="">Умови договору</a>
+                                    </label>
+                                </div>
+                                <div class="modal__conteiner-btn">
+                                    <button class="modal__btn" type="submit">Відправити</button>
+                                </div>
                             </form>
                             <button class="modal__btn-close" data-modal-close type="button">
                                 <svg class="modal__icon-close">
@@ -388,7 +393,9 @@
                     <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
                     <address>
                         <ul class="contact-info__list">
-                            <li class="contact-info__item"><a class="contact-info__link contact-info__link--white" href="https://goo.gl/maps/CG5V6HVF5MBvLQBx5">м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li class="contact-info__item">
+                                <a class="contact-info__link contact-info__link--white" href="https://goo.gl/maps/CG5V6HVF5MBvLQBx5">м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
                             <li class="contact-info__item"><a class="contact-info__link contact-info__link--grey" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             <li class="contact-info__item"><a class="contact-info__link contact-info__link--grey" href="tel:++380961111111">+38 096 111 11 11</a></li>
                         </ul>
