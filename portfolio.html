@@ -14,32 +14,57 @@
     <body>
         <header class="header">
             <div class="conteiner-header">
-                <nav class="nav">
-                    <a class="nav__logo" href="./index.html"><span class="nav__logo--blue">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
-                        <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
-                    </ul>
-                </nav>
-                <div class="contact">
-                    <ul class="contact__list">
-                        <li class="contact__item">
-                            <a class="contact__link" href="mailto:info@devstudio.com">
-                                <svg class="contact__email">
-                                    <use href="./image/icons.svg#icon-envelope"></use></svg
-                                ><span>info@devstudio.com</span></a
-                            >
-                        </li>
-                        <li class="contact-item">
-                            <a class="contact__link" href="tel:+380961111111">
-                                <svg class="contact__phone">
-                                    <use href="./image/icons.svg#icon-smartphone"></use></svg
-                                ><span>+38 096 111 11 11</span></a
-                            >
-                        </li>
-                    </ul>
+                <a class="nav__logo" href="./index.html"><span class="nav__logo--blue">Web</span>Studio</a>
+                <div class="menu is-hidden" data-menu>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
+                            <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contact">
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <a class="contact__link" href="mailto:info@devstudio.com">
+                                    <svg class="contact__email">
+                                        <use href="./image/icons.svg#icon-envelope"></use></svg
+                                    ><span>info@devstudio.com</span></a
+                                >
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="tel:+380961111111">
+                                    <svg class="contact__phone">
+                                        <use href="./image/icons.svg#icon-smartphone"></use></svg
+                                    ><span>+38 096 111 11 11</span></a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="contact__network-list">
+                            <li class="contact__network-item">
+                                <a class="contact__network-link" href="">Instagram</a>
+                            </li>
+                            <li class="contact__network-line"></li>
+                            <li class="contact__network-item">
+                                <a class="contact__network-link" href="">Twitter</a>
+                            </li>
+                            <li class="contact__network-line"></li>
+                            <li class="contact__network-item">
+                                <a class="contact__network-link" href="">Facebook</a>
+                            </li>
+                            <li class="contact__network-line"></li>
+                            <li class="contact__network-item">
+                                <a class="contact__network-link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <button class="menu__btn" type="button">
+                    <svg class="menu__icon" data-menu-move>
+                        <use class="menu__close" href="./image/icons.svg#icon-menu-close"></use>
+                        <use class="menu__open" href="./image/icons.svg#icon-menu-open"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -61,8 +86,8 @@
                                     <img src="./image/portfolio1.jpg" alt="Розділ технокряк" width="370" />
                                     <p class="services__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                        компанію чи приватну особу.
-                             ontent-       </p>
+                                        компанію чи приватну особу. ontent-
+                                    </p>
                                 </div>
                                 <div class="info">
                                     <h3 class="info__project">Технокряк</h3>
@@ -193,14 +218,17 @@
                     </ul>
                 </div>
             </section>
+            <script src="./js/menu.js"></script>
         </main>
-         <footer id="contact" class="footer">
+        <footer id="contact" class="footer">
             <div class="conteiner-footer">
                 <div class="contact-info">
                     <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
                     <address>
                         <ul class="contact-info__list">
-                            <li class="contact-info__item"><a class="contact-info__link contact-info__link--white" href="https://goo.gl/maps/CG5V6HVF5MBvLQBx5">м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li class="contact-info__item">
+                                <a class="contact-info__link contact-info__link--white" href="https://goo.gl/maps/CG5V6HVF5MBvLQBx5">м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
                             <li class="contact-info__item"><a class="contact-info__link contact-info__link--grey" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             <li class="contact-info__item"><a class="contact-info__link contact-info__link--grey" href="tel:++380961111111">+38 096 111 11 11</a></li>
                         </ul>
