@@ -1,5 +1,10 @@
 .contact__list {
     @extend %list;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
     @include tablet() {
         display: flex;
         flex-wrap: wrap;
@@ -13,13 +18,10 @@
 .contact__link {
     @extend %link;
     font-weight: 500;
-
     letter-spacing: 0.02em;
-    color: $secondary-text-color;
     display: flex;
-    // flex-wrap: wrap;
-
     align-items: center;
+    color: $secondary-text-color;
     @include tablet() {
         font-size: 12px;
         line-height: calc(14 / 12);
@@ -31,9 +33,36 @@
         gap: 10px;
     }
 }
+.contact__list .contact__item:nth-child(1) {
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
+    }
+}
+.contact__list .contact__item:nth-child(2) {
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40 / 34);
+        letter-spacing: 0.02em;
+        margin-bottom: 33px;
+        & .contact__link {
+            color: $accent-color;
+        }
+    }
+    @media screen and (max-width: 336px) {
+        font-size: 32px;
+        line-height: calc(40 / 32);
+    }
+}
 
 .contact__email {
     fill: currentColor;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     @include tablet() {
         width: 14px;
         height: 10px;
@@ -45,6 +74,9 @@
 }
 .contact__phone {
     fill: currentColor;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     @include tablet() {
         width: 10px;
         height: 14px;
@@ -53,4 +85,30 @@
         width: 10px;
         height: 16px;
     }
+}
+.contact__network-list {
+    @extend %list;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    @include tablet() {
+        display: none;
+    }
+}
+.contact__network-link {
+    @extend %link;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}
+.contact__network-line {
+    width: 0px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    
 }
