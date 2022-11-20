@@ -4,3 +4,9 @@ body {
     background: $body-bg-color;
     margin: 0px auto;
 }
+
+body.modal-open {
+    @media screen and (max-width: 767px) {
+        overflow: hidden;
+    }
+}

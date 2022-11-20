@@ -118,6 +118,12 @@ body {
   margin: 0px auto;
 }
 
+@media screen and (max-width: 767px) {
+  body.modal-open {
+    overflow: hidden;
+  }
+}
+
 .header {
   border-bottom: #ececec solid 1px;
 }
