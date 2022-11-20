@@ -5,25 +5,45 @@
     height: 100%;
     top: 0;
     left: 0;
+    // bottom: 0;
+    // right: 0;
     opacity: 1;
     transition: opacity $transition;
     z-index: 2;
     overflow: hidden;
     overflow-y: auto;
+    @media screen and (max-height: 608px) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+    }
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 
     & .modal {
-        transform: translate(-50%, -50%) scale(1.1);
+        @media screen and (max-height: 608px) {
+            transform: scale(1.1);
+        }
+        @media screen and (min-height: 609px) {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 }
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    @media screen and (max-height: 608px) {
+        transform: scale(1);
+    }
+    @media screen and (min-height: 609px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
     padding: 40px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

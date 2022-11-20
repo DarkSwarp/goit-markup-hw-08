@@ -5,12 +5,25 @@
 .nav__logo {
     font-family: $secondary-font-family;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: $primari-text-color;
     text-decoration: none;
-    margin-right: 93px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
+    @include tablet() {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        margin-right: 88px;
+    }
+
+    @include desctop() {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        margin-right: 93px;
+    }
 
     &--blue {
         color: $accent-color;
@@ -18,9 +31,16 @@
 }
 .nav__list {
     @extend %list;
-    display: flex;
-    gap: 50px;
-    margin-right: 318px;
+    @include tablet() {
+        display: flex;
+        gap: 50px;
+        margin-right: 97px;
+    }
+    @include desctop() {
+        display: flex;
+        gap: 50px;
+        margin-right: 318px;
+    }
 }
 .nav__link {
     @extend %link;
