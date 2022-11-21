@@ -1,11 +1,12 @@
 .products {
     @extend %section;
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 30px;
+    }
     @media screen and (max-width: 768px) {
         padding-bottom: 40px;
     }
-    @include tablet() {
-        padding-bottom: 30px;
-    }
+    
 }
 .filter {
     @extend .conteiner;
