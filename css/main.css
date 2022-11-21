@@ -200,6 +200,7 @@ body {
 @media screen and (min-width: 768px) {
   .menu.is-hidden {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 @media screen and (max-width: 767px) {
