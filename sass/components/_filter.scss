@@ -1,5 +1,11 @@
 .products {
     @extend %section;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 40px;
+    }
+    @include tablet() {
+        padding-bottom: 30px;
+    }
 }
 .filter {
     @extend .conteiner;
@@ -8,7 +14,13 @@
     @extend %list;
     display: flex;
     gap: 8px;
-    justify-content: center;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    @include tablet() {
+        justify-content: center;
+    }
 }
 .filter__btn {
     font-family: inherit;

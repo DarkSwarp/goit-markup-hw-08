@@ -1408,10 +1408,31 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .products {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    padding-bottom: 30px;
+  }
+}
+
 .filter__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .filter__list {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+  }
 }
 
 .filter__btn {
@@ -1450,6 +1471,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item {
+    width: 370px;
+  }
 }
 
 .services__link {
