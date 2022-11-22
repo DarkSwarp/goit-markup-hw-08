@@ -1117,7 +1117,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .client__item {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 30px) / 2);
     max-width: 210px;
   }
 }

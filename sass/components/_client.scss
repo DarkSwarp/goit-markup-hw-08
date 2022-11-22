@@ -15,7 +15,7 @@
 }
 .client__item {
     @media screen and (max-width: 767px) {
-        width: calc((100% - 3 * 30px) / 2);
+        width: calc((100% - 30px) / 2);
         max-width: 210px;
     }
     @include tablet() {
