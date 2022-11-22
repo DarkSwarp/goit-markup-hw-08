@@ -191,7 +191,7 @@ body {
   }
 }
 
-@media screen and (max-height: 767px) {
+@media screen and (max-width: 767px) {
   .menu.is-hidden {
     opacity: 0;
     pointer-events: none;
